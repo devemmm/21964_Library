@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/21964_Library?zeroDateTimeBehavior=convertToNull</property>
+    <property name="hibernate.connection.username">root</property>
+    <mapping resource="Model/Client.hbm.xml"/>
+    <mapping resource="Model/Users.hbm.xml"/>
+    <mapping resource="Model/BookCategorie.hbm.xml"/>
+    <mapping resource="Model/WithDrowBook.hbm.xml"/>
+    <mapping resource="Model/Book.hbm.xml"/>
+    <mapping resource="Model/ReturnedBook.hbm.xml"/>
+  </session-factory>
+</hibernate-configuration>

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated May 10, 2020 1:12:19 PM by Hibernate Tools 3.6.0 -->
+<hibernate-mapping>
+    <class name="Model.BookCategorie" table="bookCategorie" catalog="21964_Library">
+        <id name="categorieId" type="string">
+            <column name="categorieId" length="5" />
+            <generator class="assigned" />
+        </id>
+        <property name="categorieName" type="string">
+            <column name="categorieName" length="15" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
